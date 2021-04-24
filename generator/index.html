@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="form">
+        <h2>Генератор паролей</h2>
+        <div class="option">
+          <div id="result"></div>
+        </div>
+        <div class="option">
+          <label>Password length</label>
+          <input type="number" id="length" min="4" max="25" value="16" />
+        </div>
+        <div class="option">
+          <label>Строчные буквы</label>
+          <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div class="option">
+          <label>Заглавные буквы</label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+        <div class="option">
+          <label>Символы</label>
+          <input type="checkbox" id="symbols" checked />
+        </div>
+        <div class="option">
+          <label>Цифры</label>
+          <input type="checkbox" id="numbers" checked />
+        </div>
+        <button id="generate" onclick="generate()">Сгенерировать пароль</button>
+      </div>
+    </body>
+  </html>
